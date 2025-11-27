@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfes Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Enfes Pizza</h1>
+            <ul>
+                <li>Anasayfa</li>
+                <li>Menu</li>
+                <li>Sepet: <span id="sepet-sayisi">0</span> Adet - <span id="toplam-fiyat">0</span> TL</li>
+                <li>
+                    <button onclick="sepetiBosalt()" style="background-color: red; color: white;">Temizle</button>
+                    <button onclick="satinAl()" style="background-color: green; color: white;">Siparişi Tamamla</button>
+                </li>
+                <li>Siparişler: <span id="siparis-ozeti">Henüz yok</span></li>
+                </li>
+            </ul>
+        </div>
+        <div class="urunler">
+            <div class="pizza">
+                <img src="images/marg.jpg" alt="margarita">
+                <h3>Margarita Pizza</h3>
+                <p>250 TL</p>
+                <button onclick="sepeteEkle(250, 'Margarita')">Sepete Ekle</button>
+            </div>
+            <div class="pizza">
+                <img src="images/kar.webp" alt="karisik">
+                <h3>Karisik Pizza</h3>
+                <p>260 TL</p>
+                <button onclick="sepeteEkle(260, 'Karışık')">Sepete Ekle</button>
+
+            </div>
+            <div class="pizza">
+                <img src="images/suc.png" alt="sucuklu">
+                <h3>Sucuklu Pizza</h3>
+                <p>220 TL</p>
+                <button onclick="sepeteEkle(220, 'Sucuklu')">Sepete Ekle</button>
+
+            </div>
+            <div class="footer">
+                <p>© 2024 Enfes Pizza - Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
